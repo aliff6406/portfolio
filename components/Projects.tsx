@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="mb-20 flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-40"
+      className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-0 md:mb-20"
     >
       <SectionHeading
         intro="My Projects"
@@ -16,7 +16,7 @@ const Projects = () => {
       />
 
       <div className="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
-        {projects.map((project, id) => (
+        {projects.map((project) => (
           <ProjectCard
             href={project.href}
             key={project.title}

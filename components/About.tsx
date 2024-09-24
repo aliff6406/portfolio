@@ -1,5 +1,4 @@
 import React from "react";
-import SectionHeading from "./SectionHeading";
 import { EducationCard } from "./EducationCard";
 import { education } from "@/lib/data";
 

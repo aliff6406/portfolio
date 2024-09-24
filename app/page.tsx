@@ -1,6 +1,8 @@
 import About from "@/components/About";
+import ContactForm from "@/components/ContactForm";
 import Divider from "@/components/Divider";
 import { Experience } from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
@@ -9,15 +11,18 @@ import { links } from "@/lib/data";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-4 sm:px-10">
-      <div className="w-full max-w-7xl"></div>
-      <FloatingNav navItems={links} />
-      <Hero />
-      <Divider />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-    </main>
+    <>
+      <main className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-4 sm:px-10">
+        <FloatingNav navItems={links} />
+        <Hero />
+        <Divider />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <ContactForm />
+      </main>
+      <Footer />
+    </>
   );
 }

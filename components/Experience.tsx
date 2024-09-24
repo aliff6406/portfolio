@@ -10,7 +10,7 @@ export const Experience = () => {
       className="flex max-w-[45rem] scroll-mt-28 flex-col justify-start leading-8 sm:mb-0 md:mb-28"
     >
       <h2 className="mb-7 text-3xl font-bold tracking-tighter sm:text-5xl">
-        Experience
+        Work Experience
       </h2>{" "}
       {/* </BlurFade> */}
       {/* <BlurFade delay={BLUR_FADE_DELAY * 14}> */}

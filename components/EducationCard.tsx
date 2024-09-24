@@ -41,12 +41,12 @@ export const EducationCard = ({
   return (
     <Link
       href={href || "#"}
-      className="block cursor-pointer"
+      className="block cursor-pointer bg-gray-50"
       onClick={handleClick}
     >
       <Card className="flex gap-y-10">
         <div className="flex-none">
-          <Avatar className="bg-muted-background m-auto size-12 border dark:bg-foreground">
+          <Avatar className="background m-auto size-12 border">
             <AvatarImage
               src={logoUrl}
               alt={altText}
@@ -80,7 +80,7 @@ export const EducationCard = ({
                   )}
                 />
               </h3>
-              <div className="text-muted-foreground text-right text-xs tabular-nums sm:text-sm">
+              <div className="text-right text-xs tabular-nums text-muted-foreground sm:text-sm">
                 {period}
               </div>
             </div>

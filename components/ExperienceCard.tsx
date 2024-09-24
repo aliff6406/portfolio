@@ -35,22 +35,22 @@ export function ExperienceCard({
       </div>
       <div className="flex flex-1 flex-col justify-start gap-1">
         {dates && (
-          <time className="text-muted-foreground text-sm">{dates}</time>
+          <time className="text-sm text-muted-foreground">{dates}</time>
         )}
         <h2 className="text-xl font-semibold leading-none">{title}</h2>
         <div className="mb-3 flex items-center justify-between">
           {company && (
-            <p className="text-muted-foreground text-md">{company}</p>
+            <p className="text-md text-muted-foreground">{company}</p>
           )}
           {location && (
-            <p className="text-muted-foreground text-md">{location}</p>
+            <p className="text-md text-muted-foreground">{location}</p>
           )}
         </div>
         {description && (
           <ul className="list-disc space-y-2 leading-7">
             {description.map((description, idx) => (
               <li key={idx}>
-                <span className="dark:prose-invert text-muted-foreground text-md">
+                <span className="dark:prose-invert text-md text-muted-foreground">
                   {description}
                 </span>
               </li>

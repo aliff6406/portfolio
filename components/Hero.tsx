@@ -23,7 +23,7 @@ const Hero = () => {
 
         <p className="max-w-[40rem] pt-7 sm:text-sm md:text-lg">
           a full-stack software engineer based in <s>malaysia</s> united
-          kingdom. i'm always curious about new technologies and have been
+          kingdom. i&apos;m always curious about new technologies and have been
           spending time lately building beautiful and functional web apps.
         </p>
         <div className="mt-5 flex items-center justify-center">
