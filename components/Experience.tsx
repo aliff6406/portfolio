@@ -12,14 +12,8 @@ export const Experience = () => {
       <h2 className="mb-7 font-bold tracking-tighter sm:text-3xl md:text-4xl">
         Work Experience
       </h2>{" "}
-      {/* </BlurFade> */}
-      {/* <BlurFade delay={BLUR_FADE_DELAY * 14}> */}
       <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
         {experiences.map((experience, idx) => (
-          // <BlurFade
-          //   key={experience.title + project.dates}
-          //   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-          // >
           <ExperienceCard
             key={idx}
             title={experience.title}
@@ -30,10 +24,8 @@ export const Experience = () => {
             image={experience.src}
             //   links={experience.links}
           />
-          // </BlurFade>
         ))}
       </ul>
-      {/* </BlurFade> */}
     </section>
   );
 };
