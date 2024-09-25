@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import ContactForm from "@/components/ContactForm";
-import Divider from "@/components/Divider";
 import { Experience } from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -15,7 +14,6 @@ export default function Home() {
       <main className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center px-4 sm:px-10">
         <FloatingNav navItems={links} />
         <Hero />
-        <Divider />
         <About />
         <Skills />
         <Experience />

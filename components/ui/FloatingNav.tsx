@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 "use client";
 import React, { useState } from "react";
 import {
@@ -61,23 +62,25 @@ export const FloatingNav = ({
           className,
         )}
       >
-        {navItems.map((navItem: any, idx: number) => (
-          // TODO: improve hover styling and  add section focus styling {https://www.youtube.com/watch?v=sUKptmUVIBM&t=1106s} : 3:13:28
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            onClick={() => setActiveSection(navItem.name)}
-            className={cn(
-              "flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-300 dark:text-gray-500 dark:hover:text-gray-950",
-              {
-                "text-gray-950": activeSection === navItem.name,
-              },
-            )}
-          >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="!cursor-pointer text-sm">{navItem.name}</span>
-          </Link>
-        ))}
+        {navItems.map(
+          (navItem: { name: string; link: string }, idx: number) => (
+            // TODO: improve hover styling and  add section focus styling {https://www.youtube.com/watch?v=sUKptmUVIBM&t=1106s} : 3:13:28
+            <Link
+              key={`link=${idx}`}
+              href={navItem.link}
+              onClick={() => setActiveSection(navItem.name)}
+              className={cn(
+                "flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-300 dark:text-gray-500 dark:hover:text-gray-950",
+                {
+                  "text-gray-950": activeSection === navItem.name,
+                },
+              )}
+            >
+              {/* <span className="block sm:hidden">{navItem.icon}</span> */}
+              <span className="!cursor-pointer text-sm">{navItem.name}</span>
+            </Link>
+          ),
+        )}
       </motion.div>
     </AnimatePresence>
   );

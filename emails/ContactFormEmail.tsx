@@ -10,11 +10,11 @@ const ContactFormEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
   message,
 }) => (
   <div>
-    <h1>Portfolio contact form submission</h1>
+    <h3>Portfolio contact form submission</h3>
     <p>
       From <strong>{name}</strong> at {email}
     </p>
-    <h3>Message:</h3>
+    <h4>Message:</h4>
     <p>{message}</p>
   </div>
 );

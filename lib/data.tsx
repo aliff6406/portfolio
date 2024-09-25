@@ -1,8 +1,8 @@
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-import { HiRefresh } from "react-icons/hi";
-import { start } from "repl";
+// import corpcommentImg from "@/public/corpcomment.png";
+// import rmtdevImg from "@/public/rmtdev.png";
+// import wordanalyticsImg from "@/public/wordanalytics.png";
+// import { HiRefresh } from "react-icons/hi";
+// import { start } from "repl";
 import { FaGithub } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 
@@ -71,7 +71,7 @@ export const education = [
   {
     school: "Lancaster University",
     href: "https://www.lancaster.ac.uk/",
-    degree: "Bachelor's Degree of Computer Science (BSc)",
+    degree: "Bachelor's Degree of Computer Science (BSc) First Class Honours",
     logoURL: "/lancasteruni.jpg",
     start: "2022",
     end: "2024",
@@ -79,7 +79,7 @@ export const education = [
   {
     school: "Sunway University",
     href: "https://sunwayuniversity.edu.my/",
-    degree: "Bachelor's Degree of Computer Science (BSc)",
+    degree: "Bachelor's Degree of Computer Science (BSc) 3.82 GPA",
     logoURL: "/sunwayuni.jpg",
     start: "2021",
     end: "2022",
@@ -87,7 +87,7 @@ export const education = [
   {
     school: "Sunway College",
     href: "https://sunwaycollege.edu.my/",
-    degree: "A Levels: Mathematics, Economics, Psychology",
+    degree: "A Levels: Mathematics, Economics, Psychology AAA*",
     logoURL: "/sunwaycollege.jpg",
     start: "2019",
     end: "2021",

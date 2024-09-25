@@ -1,7 +1,7 @@
 import React from "react";
 import { ExperienceCard } from "./ExperienceCard";
 import { experiences } from "@/lib/data";
-import SectionHeading from "./SectionHeading";
+// import SectionHeading from "./SectionHeading";
 
 export const Experience = () => {
   return (
@@ -9,7 +9,7 @@ export const Experience = () => {
       id="experience"
       className="flex max-w-[45rem] scroll-mt-28 flex-col justify-start leading-8 sm:mb-0 md:mb-28"
     >
-      <h2 className="mb-7 text-3xl font-bold tracking-tighter sm:text-5xl">
+      <h2 className="mb-7 font-bold tracking-tighter sm:text-3xl md:text-4xl">
         Work Experience
       </h2>{" "}
       {/* </BlurFade> */}

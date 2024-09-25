@@ -23,7 +23,7 @@ const SectionHeading = ({
       >
         {intro}
       </div>
-      <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+      <h2 className="font-bold tracking-tighter sm:text-3xl md:text-4xl">
         {title}
       </h2>
       <p className="max-w-[40rem] text-center text-[#737373] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">

@@ -10,29 +10,37 @@ const About = () => {
     >
       <div>
         {/* <SectionHeading title="About me" /> */}
-        <h2 className="mb-7 text-3xl font-bold tracking-tighter sm:text-5xl">
-          About me
+        <h2 className="mb-7 font-bold tracking-tighter sm:text-3xl md:text-4xl">
+          Hi again, I&apos;m Aliff.
         </h2>
-        <p className="mb-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className="flex flex-col items-center justify-center gap-7 text-lg leading-8">
+          <p className="">
+            I&apos;m a software engineer based in the UK, interested in all
+            things software, from concept to the delivery of next-gen
+            applications. I&apos;m currently an API developer at Lancaster
+            University, involved in the full software development lifecycle to
+            build applications that serve students, educators and local
+            organisations across the region.
+          </p>
 
-        <p>
-          Pulvinar inceptos nec pretium aenean iaculis amet. At tortor placerat
-          sed ut dui penatibus. Quam pretium nec vivamus, viverra ut orci.
-          Phasellus vehicula sagittis fames curabitur tristique tincidunt
-          pellentesque at habitant. Dis litora lobortis quis cubilia posuere
-          massa commodo nulla dapibus. Sed erat parturient a placerat consequat
-          nunc lobortis per.
-        </p>
+          <p>
+            I find joy in solving complex problems through creative solutions
+            and collaborating with diverse teams. I am constantly looking for
+            new challenges that push me to grow, learn, and innovate. My goal
+            has always been to deliver impactful, user-centered solutions with
+            beautiful visuals, backed by performant systems to offer seamless
+            experiences.
+          </p>
 
-        <h2 className="py-5 text-xl font-bold">Education</h2>
+          <p>
+            Outside of coding, I love moving in all capacity. I spend my time
+            lifting circles in the gym, running laps around town, and climbing
+            plastic rocks. I think a lot about coffee beans, buttery croissants
+            and my cat Timmy.
+          </p>
+        </div>
+
+        <h2 className="py-5 font-bold sm:text-xl md:text-2xl">Education</h2>
         <div className="flex flex-col gap-y-3">
           {education.map((education) => (
             // <BlurFade
