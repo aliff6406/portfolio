@@ -21,6 +21,7 @@ const ContactForm = () => {
     sectionName: "Contact",
     threshold: 1,
   });
+
   const {
     register,
     handleSubmit,
@@ -51,7 +52,7 @@ const ContactForm = () => {
     <section
       ref={ref}
       id="contact"
-      className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-20 md:mb-40"
+      className="flex max-w-[45rem] scroll-mt-40 flex-col justify-start sm:mb-20 md:mb-40"
     >
       {/* Background pattern */}
       {/* <svg

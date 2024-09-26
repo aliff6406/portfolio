@@ -15,7 +15,7 @@ const Projects = () => {
     <section
       ref={ref}
       id="projects"
-      className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-14 md:mb-28"
+      className="flex max-w-[45rem] scroll-mt-[8rem] flex-col justify-start sm:mb-14 md:mb-28"
     >
       <SectionHeading
         intro="My Projects"
