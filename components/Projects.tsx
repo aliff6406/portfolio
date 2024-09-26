@@ -2,8 +2,8 @@
 
 import React from "react";
 import SectionHeading from "./SectionHeading";
-import { ProjectCard } from "./ProjectCard";
-import { projects } from "@/lib/data";
+// import { ProjectCard } from "./ProjectCard";
+// import { projects } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 const Projects = () => {
