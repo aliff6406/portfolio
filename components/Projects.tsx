@@ -24,7 +24,7 @@ const Projects = () => {
       />
 
       <div className="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
-        {projects.map((project) => (
+        {/* {projects.map((project) => (
           <ProjectCard
             href={project.href}
             key={project.title}
@@ -36,7 +36,7 @@ const Projects = () => {
             video={project.video}
             links={project.links}
           />
-        ))}
+        ))} */}
       </div>
     </section>
   );
