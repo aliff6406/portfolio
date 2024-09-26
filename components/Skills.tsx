@@ -1,10 +1,15 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 import { technologies } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 const Skills = () => {
+  const { ref } = useSectionInView({ sectionName: "Skills", threshold: 1 });
   return (
     <section
+      ref={ref}
       className="align-center flex max-w-[45rem] scroll-mt-40 flex-col justify-center text-center sm:mb-14 md:mb-28"
       id="skills"
     >

@@ -1,11 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import SectionHeading from "./SectionHeading";
 import { ProjectCard } from "./ProjectCard";
 import { projects } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 
 const Projects = () => {
+  const { ref } = useSectionInView({
+    sectionName: "Projects",
+    threshold: 0.6,
+  });
   return (
     <section
+      ref={ref}
       id="projects"
       className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-14 md:mb-28"
     >

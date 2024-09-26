@@ -1,11 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import { ExperienceCard } from "./ExperienceCard";
 import { experiences } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 // import SectionHeading from "./SectionHeading";
 
 export const Experience = () => {
+  const { ref } = useSectionInView({
+    sectionName: "Experience",
+    threshold: 0.6,
+  });
   return (
     <section
+      ref={ref}
       id="experience"
       className="flex max-w-[45rem] scroll-mt-28 flex-col justify-start leading-8 sm:mb-14 md:mb-28"
     >

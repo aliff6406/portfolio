@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { z } from "zod";
 import { toast } from "sonner";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -12,10 +12,15 @@ import { Textarea } from "@/components/ui/Textarea";
 import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 import { sendEmail } from "@/lib/actions";
+import { useSectionInView } from "@/lib/hooks";
 
 type Inputs = z.infer<typeof ContactFormSchema>;
 
 const ContactForm = () => {
+  const { ref } = useSectionInView({
+    sectionName: "Contact",
+    threshold: 1,
+  });
   const {
     register,
     handleSubmit,
@@ -44,6 +49,7 @@ const ContactForm = () => {
 
   return (
     <section
+      ref={ref}
       id="contact"
       className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-20 md:mb-40"
     >

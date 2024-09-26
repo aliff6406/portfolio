@@ -1,12 +1,17 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import { EducationCard } from "./EducationCard";
 import { education } from "@/lib/data";
 import UnderlineButton from "./ui/UnderlineButton";
 import PhotoCollage from "./PhotoCollage";
+import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
+  const { ref } = useSectionInView({ sectionName: "About", threshold: 0.4 });
   return (
     <section
+      ref={ref}
       className="flex max-w-[45rem] scroll-mt-[6.5rem] flex-col justify-start leading-8 sm:mb-14 md:mb-28"
       id="about"
     >

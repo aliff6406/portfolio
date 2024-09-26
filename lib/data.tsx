@@ -35,7 +35,7 @@ export const links = [
     name: "Contact",
     link: "#contact",
   },
-];
+] as const;
 
 export const experiences = [
   {

@@ -1,13 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import UnderlineButton from "./ui/UnderlineButton";
+import { useSectionInView } from "@/lib/hooks";
 // import { motion } from "framer-motion";
 
 const Hero = () => {
+  const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.9 });
   return (
     <section
+      ref={ref}
       className="relative z-10 mb-40 mt-10 flex scroll-mt-[200] justify-center pt-[12.5rem] text-center sm:mb-40 md:mb-60"
       id="home"
     >
