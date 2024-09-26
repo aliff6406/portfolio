@@ -7,11 +7,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-0 md:mb-20"
+      className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-14 md:mb-28"
     >
       <SectionHeading
         intro="My Projects"
-        title="Check out my latest projects"
+        title="Check out my latest work"
         info="I've worked on a variety of projects, from complex web applications to deep learning classifiers. Here are a few of my favourites."
       />
 

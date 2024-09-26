@@ -33,11 +33,13 @@ export function ExperienceCard({
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
       </div>
-      <div className="flex flex-1 flex-col justify-start gap-1">
+      <div className="flex flex-1 flex-col justify-start gap-1 text-gray-700">
         {dates && (
           <time className="text-sm text-muted-foreground">{dates}</time>
         )}
-        <h2 className="text-xl font-semibold leading-none">{title}</h2>
+        <h2 className="text-xl font-semibold leading-none text-gray-950">
+          {title}
+        </h2>
         <div className="mb-3 flex items-center justify-between">
           {company && (
             <p className="text-md text-muted-foreground">{company}</p>
@@ -50,9 +52,7 @@ export function ExperienceCard({
           <ul className="list-disc space-y-2 leading-7">
             {description.map((description, idx) => (
               <li key={idx}>
-                <span className="dark:prose-invert text-md text-muted-foreground">
-                  {description}
-                </span>
+                <span className="dark:prose-invert text-md">{description}</span>
               </li>
             ))}
           </ul>

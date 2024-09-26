@@ -5,14 +5,10 @@ import { technologies } from "@/lib/data";
 const Skills = () => {
   return (
     <section
-      className="align-center flex max-w-[45rem] scroll-mt-40 flex-col justify-center text-center sm:mb-0 md:mb-28"
+      className="align-center flex max-w-[45rem] scroll-mt-40 flex-col justify-center text-center sm:mb-14 md:mb-28"
       id="skills"
     >
-      <SectionHeading
-        intro="My Tech Stack"
-        title="Tools and Technologies"
-        info="A glimpse of my toolset used in my day-to-day work and passion projects."
-      />
+      <SectionHeading intro="My Tech Stack" title="Tools and Technologies" />
       <div className="align-center flex flex-wrap justify-center gap-10">
         {technologies.map((technology) => (
           <a href={technology.href} key={technology.name}>

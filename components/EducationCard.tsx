@@ -41,10 +41,10 @@ export const EducationCard = ({
   return (
     <Link
       href={href || "#"}
-      className="block cursor-pointer bg-gray-50"
+      className="block cursor-pointer"
       onClick={handleClick}
     >
-      <Card className="flex gap-y-10">
+      <Card className="flex gap-y-10 bg-gray-50">
         <div className="flex-none">
           <Avatar className="background m-auto size-12 border">
             <AvatarImage

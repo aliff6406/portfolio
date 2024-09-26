@@ -45,7 +45,7 @@ const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-0 md:mb-28"
+      className="flex max-w-[45rem] scroll-mt-20 flex-col justify-start sm:mb-20 md:mb-40"
     >
       {/* Background pattern */}
       {/* <svg
