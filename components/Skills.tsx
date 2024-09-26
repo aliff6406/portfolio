@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 import { technologies } from "@/lib/data";

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { z } from "zod";
 import { toast } from "sonner";
 import { SubmitHandler, useForm } from "react-hook-form";

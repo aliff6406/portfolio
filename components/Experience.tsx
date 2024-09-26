@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { ExperienceCard } from "./ExperienceCard";
 import { experiences } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";

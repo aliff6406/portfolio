@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { EducationCard } from "./EducationCard";
 import { education } from "@/lib/data";
 import UnderlineButton from "./ui/UnderlineButton";

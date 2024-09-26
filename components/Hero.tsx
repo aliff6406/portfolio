@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import UnderlineButton from "./ui/UnderlineButton";
 import { useSectionInView } from "@/lib/hooks";
 // import { motion } from "framer-motion";

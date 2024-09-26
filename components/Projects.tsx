@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import SectionHeading from "./SectionHeading";
 import { ProjectCard } from "./ProjectCard";
 import { projects } from "@/lib/data";
