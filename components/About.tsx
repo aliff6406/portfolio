@@ -12,16 +12,16 @@ const About = () => {
   return (
     <section
       ref={ref}
-      className="flex max-w-[45rem] scroll-mt-[6.5rem] flex-col justify-start leading-8 sm:mb-14 md:mb-28"
+      className="mb-20 flex max-w-[45rem] scroll-mt-[6.5rem] flex-col justify-start leading-8 md:mb-28"
       id="about"
     >
       <PhotoCollage />
       <div>
         {/* <SectionHeading title="About me" /> */}
-        <h2 className="mb-7 font-bold tracking-tighter text-gray-950 sm:text-3xl md:text-4xl">
+        <h2 className="mb-7 text-3xl font-bold tracking-tighter text-gray-950 md:text-4xl">
           Hi again, I&apos;m Aliff.
         </h2>
-        <div className="sm:text-s mb-8 space-y-7 text-xs leading-9 md:text-lg">
+        <div className="text-md mb-8 space-y-7 leading-9 md:text-lg">
           <p className="">
             I&apos;m a software engineer based in the UK, interested in all
             things software, from concept to the delivery of next-gen
@@ -51,7 +51,7 @@ const About = () => {
           <UnderlineButton href="#contact" text="reach out." />
         </div>
 
-        <h2 className="py-5 font-bold sm:text-xl md:text-2xl">Education</h2>
+        <h2 className="py-5 text-xl font-bold md:text-2xl">Education</h2>
         <div className="flex flex-col gap-y-3">
           {education.map((education) => (
             // <BlurFade

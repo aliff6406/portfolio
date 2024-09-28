@@ -15,9 +15,9 @@ export const Experience = () => {
     <section
       ref={ref}
       id="experience"
-      className="flex max-w-[45rem] scroll-mt-28 flex-col justify-start leading-8 sm:mb-14 md:mb-28"
+      className="mb-20 flex max-w-[45rem] scroll-mt-28 flex-col justify-start leading-8 md:mb-28"
     >
-      <h2 className="mb-7 font-bold tracking-tighter text-gray-950 sm:text-3xl md:text-4xl">
+      <h2 className="mb-7 text-3xl font-bold tracking-tighter text-gray-950 md:text-4xl">
         Work Experience
       </h2>{" "}
       <ul className="mb-4 ml-4 divide-y divide-dashed border-l">

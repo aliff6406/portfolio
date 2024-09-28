@@ -11,8 +11,9 @@ const Header = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
+  // TODO: make this into burger menu on mobile
   return (
-    <header className="relative z-[999]">
+    <header className="align-center relative z-[999]">
       <motion.div
         className="fixed left-1/2 top-0 h-[4.5rem] w-full -translate-x-1/2 rounded-none bg-gray-50 bg-opacity-80 shadow-2xl shadow-black/[0.2] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
         initial={{ y: -100, x: "-50%", opacity: 0 }}

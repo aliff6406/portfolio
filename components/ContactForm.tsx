@@ -52,7 +52,7 @@ const ContactForm = () => {
     <section
       ref={ref}
       id="contact"
-      className="flex max-w-[45rem] scroll-mt-40 flex-col justify-start sm:mb-20 md:mb-40"
+      className="mb-20 flex max-w-[45rem] scroll-mt-40 flex-col justify-start md:mb-40"
     >
       {/* Background pattern */}
       {/* <svg
@@ -94,11 +94,11 @@ const ContactForm = () => {
         <SectionHeading
           title="Get in touch"
           info="Interested in working together? Send me a message and let's chat!"
-          otherClasses="w-[30rem]"
+          otherClasses="max-w-[30rem]"
         />
         <form
           onSubmit={handleSubmit(processForm)}
-          className="w-[30rem] lg:flex-auto"
+          className="max-w-[30rem] lg:flex-auto"
           noValidate
         >
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">

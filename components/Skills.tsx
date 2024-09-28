@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <section
       ref={ref}
-      className="align-center flex max-w-[45rem] scroll-mt-[8rem] flex-col justify-center text-center sm:mb-14 md:mb-28"
+      className="align-center mb-20 flex max-w-[45rem] scroll-mt-[8rem] flex-col justify-center text-center md:mb-28"
       id="skills"
     >
       <SectionHeading intro="My Tech Stack" title="Tools and Technologies" />
