@@ -97,7 +97,7 @@ export const education = [
 export const projects = [
   {
     title: "Task Flow",
-    href: "",
+    href: "https://github.com/aliff6406/task-flow",
     dates: "Sep 2024 - Present (Ongoing)",
     active: true,
     description:
