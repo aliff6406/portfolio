@@ -4,7 +4,7 @@
 // import { HiRefresh } from "react-icons/hi";
 // import { start } from "repl";
 import { FaGithub } from "react-icons/fa";
-import { FaGlobe } from "react-icons/fa";
+// import { FaGlobe } from "react-icons/fa";
 
 export const links = [
   {
@@ -96,126 +96,39 @@ export const education = [
 
 export const projects = [
   {
-    title: "Chat Collect",
-    href: "https://chatcollect.com",
-    dates: "Jan 2024 - Feb 2024",
+    title: "Task Flow",
+    href: "",
+    dates: "Sep 2024 - Present (Ongoing)",
     active: true,
     description:
-      "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+      "Task Flow is a full-stack project management app that I am currently working on, featuring a Kanban-style board for task organisation, a timeline for project tracking, and seamless task management. It offers intuitive drag-and-drop functionality for tasks, status updates, and real-time collaboration, providing a comprehensive tool to enhance productivity and streamline project workflows.",
     technologies: [
       "Next.js",
       "Typescript",
+      "React",
+      "Node.js",
+      "Express.js",
       "PostgreSQL",
       "Prisma",
       "TailwindCSS",
-      "Stripe",
-      "Shadcn UI",
-      "Magic UI",
+      "Redux",
+      "AWS",
     ],
     links: [
-      {
-        type: "Website",
-        href: "https://chatcollect.com",
-        icon: <FaGlobe />,
-      },
-    ],
-    image: "",
-    video:
-      "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-  },
-  {
-    title: "Magic UI",
-    href: "https://magicui.design",
-    dates: "June 2023 - Present",
-    active: true,
-    description:
-      "Designed, developed and sold animated UI components for developers.",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "PostgreSQL",
-      "Prisma",
-      "TailwindCSS",
-      "Stripe",
-      "Shadcn UI",
-      "Magic UI",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://magicui.design",
-        icon: <FaGlobe />,
-      },
+      // {
+      //   type: "Website",
+      //   href: "https://llm.report",
+      //   icon: <FaGlobe />,
+      // },
       {
         type: "Source",
-        href: "https://github.com/magicuidesign/magicui",
+        href: "https://github.com/aliff6406/task-flow",
         icon: <FaGithub />,
       },
     ],
-    image: "",
-    video: "https://cdn.magicui.design/bento-grid.mp4",
-  },
-  {
-    title: "llm.report",
-    href: "https://llm.report",
-    dates: "April 2023 - September 2023",
-    active: true,
-    description:
-      "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "PostgreSQL",
-      "Prisma",
-      "TailwindCSS",
-      "Shadcn UI",
-      "Magic UI",
-      "Stripe",
-      "Cloudflare Workers",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://llm.report",
-        icon: <FaGlobe />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/dillionverma/llm.report",
-        icon: <FaGithub />,
-      },
-    ],
-    image: "",
-    video: "https://cdn.llm.report/openai-demo.mp4",
-  },
-  {
-    title: "Automatic Chat",
-    href: "https://automatic.chat",
-    dates: "April 2023 - March 2024",
-    active: true,
-    description:
-      "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-    technologies: [
-      "Next.js",
-      "Typescript",
-      "PostgreSQL",
-      "Prisma",
-      "TailwindCSS",
-      "Shadcn UI",
-      "Magic UI",
-      "Stripe",
-      "Cloudflare Workers",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://automatic.chat",
-        icon: <FaGlobe />,
-      },
-    ],
-    image: "",
-    video:
-      "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+    image: "/task-flow-thumb.png",
+    // video:
+    //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
   },
 ] as const;
 

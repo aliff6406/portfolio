@@ -5,6 +5,8 @@ import SectionHeading from "./SectionHeading";
 // import { ProjectCard } from "./ProjectCard";
 // import { projects } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
+import { ProjectCard } from "./ProjectCard";
+import { projects } from "@/lib/data";
 
 const Projects = () => {
   const { ref } = useSectionInView({
@@ -23,8 +25,11 @@ const Projects = () => {
         info="I've worked on a variety of projects, from complex web applications to deep learning classifiers. Here are a few of my favourites."
       />
 
-      <div className="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2">
-        {/* {projects.map((project) => (
+      <div
+        // className="mx-auto grid max-w-[800px] grid-cols-1 gap-3 sm:grid-cols-2"
+        className="mx-auto"
+      >
+        {projects.map((project) => (
           <ProjectCard
             href={project.href}
             key={project.title}
@@ -33,10 +38,9 @@ const Projects = () => {
             dates={project.dates}
             tags={project.technologies}
             image={project.image}
-            video={project.video}
             links={project.links}
           />
-        ))} */}
+        ))}
       </div>
     </section>
   );
