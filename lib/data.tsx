@@ -43,9 +43,9 @@ export const experiences = [
     company: "Lancaster University",
     location: "Lancaster, UK",
     description: [
-      "Developing and maintaining full-stack web applications using React with TypeScript on the Next.js framework, building performant APIs with GraphQL on a serverless AWS infrastructure using AWS SDK, Lambda, S3 and DynamoDB.",
-      "Implementing automated unit and integration tests into CI/CD pipelines using Jest, reducing production bugs by 30% and improving overall development velocity.",
-      "Writing IaC using Terraform to automate the provisioning and management of AWS infrastructure ensuring consistent configurations across environments.",
+      "Developing and maintaining full-stack web applications using React with TypeScript on the Next.js framework, servicing students, schools and organisations across Lancashire.",
+      "Building backend services and APIs with GraphQL and Terraform on an AWS infrastructure using AWS SDK, Lambda, S3 and DynamoDB.",
+      "Implementing automated unit and integration tests into CI/CD pipelines using Jest, ensuring 100% code coverage, reducing production bugs by 30% and improving overall development velocity.",
       "Collaborating closely with a cross-functional scrum team, managing development workflow with Azure DevOps, conducting peer code reviews and consistently delivering features within sprint deadlines.",
     ],
     src: "/lancasteruni.jpg",
@@ -57,7 +57,7 @@ export const experiences = [
     company: "CeRDaS Centre for Research in Data Science",
     location: "Perak, Malaysia",
     description: [
-      "Developed full-stack web applications using Vue.js, building REST APIs using FastAPI and PostgresQL to deploy various machine learning pipelines for time series forecasting in predictive maintenance systems and operational risks.",
+      "Developed full-stack web applications using Vue.js with JavaScript, building REST APIs using Python on FastAPI and PostgresQL to deploy various machine learning pipelines for time series forecasting in predictive maintenance systems and operational risks.",
       "Containerised these web applications using Docker to create consistent development and testing environments.",
       "Streamlined the development of ML pipelines using ClearML through experiment tracking, hyperparameter optimisation, and model and dataset versioning, significantly improving reproducibility and time to deployment.",
     ],
