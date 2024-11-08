@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import UnderlineButton from "./ui/UnderlineButton";
 import { useSectionInView } from "@/lib/hooks";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.9 });
@@ -18,10 +18,20 @@ const Hero = () => {
         {/* <h2 className="max-w-80 pb-5 text-center text-xs uppercase tracking-widest">
           Hi there, I am
         </h2> */}
-        <h1 className="inline-block bg-gradient-to-br from-neutral-400 to-neutral-800 bg-clip-text text-center text-5xl font-bold text-transparent sm:text-6xl md:text-7xl lg:text-7xl">
+        <motion.h1
+          className="inline-block bg-gradient-to-br from-neutral-400 to-neutral-800 bg-clip-text text-center text-5xl font-bold text-transparent sm:text-6xl md:text-7xl lg:text-7xl"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}
+        >
           hi, i&apos;m aliff
-        </h1>
-        <div className="justfiy-center mt-10 flex items-center gap-3">
+        </motion.h1>
+        <motion.div
+          className="justfiy-center mt-10 flex items-center gap-3"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           <Image
             src="/gray-location.png"
             alt="Pin icon"
@@ -29,8 +39,13 @@ const Hero = () => {
             height={25}
           ></Image>
           <p className="text-lg">lancaster, uk</p>
-        </div>
-        <div className="sm:text-md max-w-[40rem] pt-7 md:text-lg">
+        </motion.div>
+        <motion.div
+          className="sm:text-md max-w-[40rem] pt-7 md:text-lg"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
           <p className="inline">
             as a full-stack software engineer, i&apos;m always curious about new
             technologies and have been spending time lately building beautiful
@@ -39,7 +54,7 @@ const Hero = () => {
           <UnderlineButton href="#about" text="about me" />
           <p className="inline">&nbsp;or let&apos;s get&nbsp;</p>
           <UnderlineButton href="#contact" text=" in touch." />
-        </div>
+        </motion.div>
         {/* <div className="mt-5 flex items-center justify-center">
           <ConnectButton
             title="Get In Touch"
