@@ -31,6 +31,16 @@ export default function Marquee({
         },
         className,
       )}
+      style={{
+        maskImage: vertical
+          ? "linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)"
+          : "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+        WebkitMaskImage: vertical
+          ? "linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)"
+          : "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+        maskRepeat: "no-repeat",
+        WebkitMaskRepeat: "no-repeat",
+      }}
     >
       {Array(repeat)
         .fill(0)

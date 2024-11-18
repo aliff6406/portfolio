@@ -44,8 +44,8 @@ export const experiences = [
     location: "Lancaster, UK",
     description: [
       "Developing and maintaining responsive and accessible full-stack web applications, using TypeScript, React and TanStack on the Next.js framework, servicing over 13,000 Lancaster students and 700 schools across Lancashire.",
-      "Designing database schemas and building backend services using AWS Lambdas and GraphQL APIs on a serverless AWS infrastructure.",
-      "Utilising Terraform to provision and deploy AWS resources including AppSync, Lambdas , S3 , DynamoDB and Cognito.",
+      "Designing database schemas and building backend services using Node.js, AWS Lambdas and GraphQL APIs on a serverless AWS infrastructure.",
+      "Utilising Terraform to provision and deploy AWS resources including AppSync, Lambdas, S3, DynamoDB, Cognito and CloudFront.",
       "Implementing automated unit and integration tests into CI/CD pipelines using Jest, ensuring over 90% code coverage and enhancing development velocity.",
       "Collaborating closely with a cross-functional scrum team using Agile methodologies to deliver key features consistently within bi-weekly sprint cycles.",
       "Managing development workflow with Azure DevOps, pair programming, conducting peer code reviews and performing QA testing ensuring high code quality and reducing bugs by over 30%.",
